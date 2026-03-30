@@ -45,23 +45,35 @@ portfolio/
 │   │   ├── components/
 │   │   │   ├── Navbar.tsx              # Sticky navigation with theme toggle
 │   │   │   ├── Footer.tsx              # Footer with social links
+│   │   │   ├── SimpleClock.tsx         # Clock component for Contact section
 │   │   │   └── sections/
 │   │   │       ├── Hero.tsx            # Hero section with CTA
 │   │   │       ├── About.tsx           # About section
 │   │   │       ├── Skills.tsx          # Skills showcase
 │   │   │       ├── Projects.tsx        # Projects with filtering
 │   │   │       └── Contact.tsx         # Contact form with EmailJS
+│   │   ├── ui/                         # Radix UI components
 │   │   ├── contexts/
 │   │   │   └── ThemeContext.tsx        # Dark/light mode context
 │   │   ├── hooks/
-│   │   │   └── useScrollAnimation.ts   # Scroll animation hook
+│   │   │   ├── useScrollAnimation.ts   # Scroll animation hook
+│   │   │   ├── useMobile.tsx           # Mobile detection hook
+│   │   │   ├── useComposition.ts       # Composition utilities
+│   │   │   └── usePersistFn.ts         # Persistent function hook
 │   │   ├── lib/
+│   │   │   ├── projectsData.ts         # Projects configuration
+│   │   │   ├── skillsData.ts           # Skills configuration
 │   │   │   └── utils.ts                # Utility functions
 │   │   ├── App.tsx                     # Main app component
 │   │   ├── main.tsx                    # React entry point
 │   │   └── index.css                   # Global styles & theme
 │   ├── index.html                      # HTML template
 │   └── public/                         # Static assets
+├── server/
+│   └── index.ts                        # Express server for SSR
+├── shared/
+│   └── const.ts                        # Shared constants
+├── patches/                            # Dependency patches
 ├── package.json                        # Dependencies
 ├── tailwind.config.ts                  # Tailwind configuration
 ├── tsconfig.json                       # TypeScript configuration
