@@ -1,0 +1,171 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  category: 'full-stack' | 'frontend' | '3d' | 'video' | 'ai' | 'testing';
+  image: string;
+  tags: string[];
+  github?: string;
+  liveDemo?: string;
+}
+
+export const projects: Project[] = [
+  {
+    id: 'mockrise',
+    title: 'Mockrise – Interview Simulation Platform',
+    description: 'A comprehensive full-stack interview simulation platform with trainee, interviewer, and admin dashboards. Features secure authentication, role-based access control, and interactive interview practice environment.',
+    category: 'full-stack',
+    image: 'assets/portfolio/mockrise.png',
+    tags: ['Full-Stack', 'React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'shadcn-ui', 'React Three Fiber', 'OAuth', 'JWT Authentication',  'Role-Based Access', 'Email Notifications', 'Postman Testing'],
+    github: 'https://github.com/aiethelamgad/Mockrise',
+    liveDemo: 'https://mock-rise.vercel.app/',
+  },
+  {
+    id: 'authflow',
+    title: 'AuthFlow – User Registration System',
+    description: 'A comprehensive full-stack authentication system with user registration, email verification, and secure password management.',
+    category: 'full-stack',
+    image: '/assets/portfolio/signup-form2.png',
+    tags: ['Full-Stack', 'Node.js', 'Express.js', 'MongoDB', 'Authentication', 'Email Verification', 'REST API'],
+    github: 'https://github.com/aiethelamgad/AuthFlow',
+  },
+  {
+    id: 'finder-clone',
+    title: 'Finder Clone – Contractors Platform',
+    description: 'A responsive frontend implementation of a contractors platform with modern UI/UX design and interactive components.',
+    category: 'frontend',
+    image: '/assets/portfolio/finder-website.png',
+    tags: ['Frontend', 'HTML', 'CSS', 'JavaScript', 'UI Design', 'Responsive Web'],
+    github: 'https://github.com/aiethelamgad/DEPI/tree/main/Finder%20Website',
+  },
+  {
+    id: 'quizmaster',
+    title: 'QuizMaster – Interactive JS Quiz',
+    description: 'An interactive quiz application built with vanilla JavaScript featuring dynamic questions, scoring, and real-time feedback.',
+    category: 'frontend',
+    image: '/assets/portfolio/js-quiz.png',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Quiz App', 'DOM Manipulation', 'Frontend', 'Dynamic UI'],
+    github: 'https://github.com/aiethelamgad/QuizMaster---Interactive-JS-Quiz',
+  },
+  {
+    id: 'memory-match',
+    title: 'MemoryMatch – Card Game',
+    description: 'A classic memory card matching game built with JavaScript, featuring game logic, scoring system, and smooth animations.',
+    category: 'frontend',
+    image: '/assets/portfolio/memory-game.png',
+    tags: ['JavaScript', 'Game Development', 'Logic Building', 'Frontend'],
+    github: 'https://github.com/aiethelamgad/MemoryMatch---Card-Game',
+  },
+  {
+    id: 'padel-club',
+    title: 'PadelClub – Sports Website',
+    description: 'A modern sports website for a padel court club featuring booking system, event information, and member profiles.',
+    category: 'frontend',
+    image: '/assets/portfolio/padel-court-club.png',
+    tags: ['HTML', 'CSS', 'JavaScript', 'UI/UX', 'Sports Website'],
+    github: 'https://github.com/aiethelamgad/PadelClub---Sports-Website',
+  },
+  {
+    id: 'countup',
+    title: 'CountUp – Counter App',
+    description: 'A simple yet elegant counter application demonstrating DOM manipulation and state management with vanilla JavaScript.',
+    category: 'frontend',
+    image: '/assets/portfolio/counter-app.png',
+    tags: ['JavaScript', 'DOM Manipulation', 'Mini App', 'Frontend'],
+    github: 'https://github.com/aiethelamgad/CountUp---Counter-App',
+  },
+  {
+    id: 'tech-solutions',
+    title: 'TechSolutions – Landing Page',
+    description: 'A professional landing page for a tech company showcasing services with responsive design and modern aesthetics.',
+    category: 'frontend',
+    image: '/assets/portfolio/tech-solutions.png',
+    tags: ['Landing Page', 'HTML', 'CSS', 'Responsive Design', 'Frontend'],
+    github: 'https://github.com/aiethelamgad/TechSolutions---Landing-Page',
+  },
+  {
+    id: 'driven-dreams',
+    title: 'Driven Dreams – Car Ad Animation',
+    description: 'A professional car advertisement video with cinematic animations, transitions, and storytelling created in Adobe Premiere Pro.',
+    category: 'video',
+    image: '/assets/portfolio/driven-dreams.png',
+    tags: ['Adobe Premiere Pro', 'Video Editing', 'Animation', 'Storytelling', 'Advertisement', 'Creative Media'],
+  },
+  {
+    id: 'lipstick-render',
+    title: 'Lipstick Render',
+    description: 'A high-quality 3D product visualization of a lipstick created in Blender with realistic materials and lighting.',
+    category: '3d',
+    image: '/assets/portfolio/lipstick.png',
+    tags: ['3D Modeling', 'Product Visualization', 'Cosmetics', 'Blender'],
+  },
+    {
+    id: 'skincare',
+    title: 'SkinCare – Product Design',
+    description: 'A professional 3D product visualization of skincare packaging with realistic materials, texturing, and lighting effects.',
+    category: '3d',
+    image: '/assets/portfolio/skin-care.png',
+    tags: ['3D Modeling', 'Product Design', 'Rendering', 'Packaging', 'Cosmetics'],
+  },
+  {
+    id: 'volleyball-court',
+    title: 'Volleyball Court Exterior',
+    description: 'A detailed 3D architectural visualization of an outdoor volleyball court with realistic materials and environmental lighting.',
+    category: '3d',
+    image: '/assets/portfolio/volleyball-court.png',
+    tags: ['3D Modeling', 'Exterior Design', 'Sports Architecture', 'Visualization', 'Outdoor Design', 'Rendering'],
+  },
+  {
+    id: 'voxel-cat',
+    title: 'Voxel Cat',
+    description: 'A stylized low-poly voxel art character created in Blender, perfect for game assets and digital art projects.',
+    category: '3d',
+    image: '/assets/portfolio/voxel-art.png',
+    tags: ['3D Modeling', 'Voxel Art', 'Blender', 'Stylized Design', 'Low-Poly', 'Game Asset'],
+  },
+  {
+    id: 'office-interior',
+    title: 'Modern Office Interior',
+    description: 'A comprehensive 3D interior design visualization of a modern office space with furniture, lighting, and realistic texturing.',
+    category: '3d',
+    image: 'assets/portfolio/office-room.png',
+    tags: ['3D Modeling', 'Interior Design', 'Visualization', 'Architecture', 'Rendering', 'Furniture', 'Texturing', 'Lighting'],
+  },
+  {
+    id: 'pocketgpt',
+    title: 'PocketGPT – AI-Powered Voice Assistant',
+    description: 'An innovative IoT voice assistant powered by AI, built on ESP32-S3 microcontroller with speech-to-text and ChatGPT integration.',
+    category: 'ai',
+    image: '/assets/portfolio/ai.png',
+    tags: ['AI', 'Voice Assistant', 'ESP32-S3', 'Microcontrollers', 'C Programming', 'Speech-to-Text', 'Text-to-Speech', 'Google APIs', 'ChatGPT API', 'IoT', 'Open Source'],
+    github: 'https://github.com/aiethelamgad/PocketGPT-AI-Powered-Voice-Assistant',
+  },
+  {
+    id: 'saucetest',
+    title: 'SauceTest Suite – Cypress E2E Automation',
+    description: 'A comprehensive end-to-end testing automation suite built with Cypress, featuring custom commands, fixtures, and advanced QA strategies.',
+    category: 'testing',
+    image: '/assets/portfolio/saucedemo.png',
+    tags: ['Automation Testing', 'Cypress', 'End-to-End Testing', 'JavaScript', 'Assertions', 'Custom Commands', 'Fixtures', 'Hooks', 'Quality Assurance', 'SauceDemo'],
+    github: 'https://github.com/aiethelamgad/SauceTest-Suite---Cypress-E2E-Automation',
+  },
+  {
+    id: 'autocommerce',
+    title: 'AutoCommerce – Cypress BDD Testing Framework',
+    description: 'A sophisticated BDD testing framework using Cypress and Cucumber, implementing Page Object Model and CI/CD integration with GitHub Actions.',
+    category: 'testing',
+    image: '/assets/portfolio/automation-exercise.png',
+    tags: ['Automation Testing', 'Cypress', 'Cucumber (BDD)', 'Step Definitions', 'Page Object Model', 'GitHub Actions', 'Custom Commands', 'Continuous Integration', 'Headless Testing', 'AutomationExercise'],
+    github: 'https://github.com/aiethelamgad/AutoCommerce-Cypress-BDD-Testing-Framework',
+  },
+];
+
+export const categories = [
+  { id: 'all', label: 'All Projects' },
+  { id: 'full-stack', label: 'Full-Stack Development' },
+  { id: 'frontend', label: 'Frontend Development' },
+  { id: '3d', label: '3D Modeling' },
+  { id: 'video', label: 'Video Editing' },
+  { id: 'ai', label: 'AI' },
+  { id: 'testing', label: 'Software Testing & Automation' },
+];
